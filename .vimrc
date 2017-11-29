@@ -35,7 +35,6 @@ set history=50
 
 "highlight search terms, use incremental search and then make Control-L clear highlights
 set hlsearch 
-set incsearch
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
 "Don't update the screen during macros. This will make your macros faster.
