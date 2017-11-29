@@ -11,7 +11,6 @@ syntax on
 set number
 set showcmd
 set showmode
-set cursorline
 
 "Make searches case-insensitive, unless they contain upper-case letters:
 set ignorecase
