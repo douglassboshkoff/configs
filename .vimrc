@@ -12,6 +12,8 @@ set number
 set showcmd
 set showmode
 set cursorline
+set t_Co=256
+set pastetoggle=<F7>
 
 "Make searches case-insensitive, unless they contain upper-case letters:
 set ignorecase
