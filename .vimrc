@@ -11,7 +11,6 @@ syntax on
 set number
 set showcmd
 set showmode
-set cursorline
 set t_Co=256
 set pastetoggle=<F7>
 
@@ -38,7 +37,6 @@ set history=50
 
 "highlight search terms, use incremental search and then make Control-L clear highlights
 set hlsearch 
-set incsearch
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
 "Don't update the screen during macros. This will make your macros faster.
