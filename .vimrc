@@ -6,7 +6,7 @@
 " I'm not really concerned about being compatible with vi
 set nocompatible
 
-colorscheme carbonized-dark
+colorscheme badwolf
 syntax on
 set number
 set showcmd
