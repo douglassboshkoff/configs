@@ -6,13 +6,16 @@
 " I'm not really concerned about being compatible with vi
 set nocompatible
 
-colorscheme torte
+colorscheme carbonized-dark
 syntax on
 set number
 set showcmd
 set showmode
 set t_Co=256
 set pastetoggle=<F7>
+if has("termguicolors") 
+	set termguicolors
+endif
 
 "Make searches case-insensitive, unless they contain upper-case letters:
 set ignorecase
@@ -44,6 +47,10 @@ set lazyredraw
 
 "Show matching parenthesis
 set showmatch 
+
+"Give good tab menus 
+set wildmenu
+set wildmode=longest:full,full
 
 "Allow writing even if you have forgotten to open file as root
 cmap w!! w !sudo tee >/dev/null %
