@@ -65,6 +65,11 @@ let mapleader = ","
 "Allow vim to ignore extraneous files for tab completion
 set wildignore=*.swp,*.pyc,*.class
 
+call plug#begin()
+Plug 'Valloric/YouCompleteMe'
+Plug 'kien/ctrlp.vim'
+call plug#end()
+
 
 " enable filetype detection:
 filetype plugin indent on
