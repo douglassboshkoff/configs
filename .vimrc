@@ -13,9 +13,6 @@ set showcmd
 set showmode
 set t_Co=256
 set pastetoggle=<F7>
-if has("termguicolors") 
-	set termguicolors
-endif
 
 "Make searches case-insensitive, unless they contain upper-case letters:
 set ignorecase
@@ -65,14 +62,17 @@ let mapleader = ","
 "Allow vim to ignore extraneous files for tab completion
 set wildignore=*.swp,*.pyc,*.class
 
-call plug#begin()
-Plug 'Valloric/YouCompleteMe'
-Plug 'kien/ctrlp.vim'
-call plug#end()
+"Plugins are overrated
+"call plug#begin()
+"Plug 'Valloric/YouCompleteMe'
+"Plug 'kien/ctrlp.vim'
+"call plug#end()
 
 
 " enable filetype detection:
 filetype plugin indent on
+" disable perl recognition in favor of prolog
+au Filetype perl set filetype=prolog
 "
 if has('autocmd')
 	" in human-language files, automatically format everything at 72 chars:
