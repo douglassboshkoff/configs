@@ -62,6 +62,11 @@ let mapleader = ","
 "Allow vim to ignore extraneous files for tab completion
 set wildignore=*.swp,*.pyc,*.class
 
+if has("autocmd")
+	  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+	      \| exe "normal! g'\"" | endif
+endif
+
 "Plugins are overrated
 "call plug#begin()
 "Plug 'Valloric/YouCompleteMe'
